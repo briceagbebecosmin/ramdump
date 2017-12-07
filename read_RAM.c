@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 
 unsigned char buffer[2048];
 int main(int argc, const char *argv[])
