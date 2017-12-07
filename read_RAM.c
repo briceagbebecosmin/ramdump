@@ -22,7 +22,7 @@ int main(int argc, const char *argv[])
   if (file_fd == NULL)
   {
     fprintf(stderr, "File %s cannot be open\n", argv[1]);
-    exit(1);
+    exit(-1);
   }
 
   address = (unsigned char *)mmap(NULL, page_size, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_LOCKED, fd, 1 * page_size);
