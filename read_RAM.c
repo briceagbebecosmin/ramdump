@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-unsigned char buffer[1024];
+unsigned char buffer[2048];
 int main(int argc, const char *argv[])
 {
   int fd = open("/dev/mem", O_SYNC);
